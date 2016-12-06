@@ -1,32 +1,24 @@
 ---
-title: "Vignette Title"
+title: "Introduction to the Package"
 author: "Vignette Author"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Introduction to the Package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+This is an overview of the main functions in the packages. There are also several helper functions, but since they are not intended to be used directly, they are not covered here.
 
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
+## Package Purpose
 
-## Vignette Info
+The package is designed to provide to tools to analysis and visualize data regarding auto accidents in the United States based on year.  It assumes the data is stored in .csv.bz2 files in your working directory.  THe data can be downloaded from [here](https://d18ky98rnyall9.cloudfront.net/_e1adac2a5f05192dc8780f3944feec13_fars_data.zip?Expires=1481068800&Signature=ZqNhKJz1-u0PZ7-AQsd0QB-ZClMMfDEIheh8J7nMB-zjJ5Jrzpt91cVWBFFv~~Rg2QF89dU~6KX0j~BEtW6nXT47C7~TlTindl13M00clEO8bVn3t49d974paqq-NORDqVIGFFgHIkz0I1P0ER4LzPV49pj7BSJxCVVP~jybO54_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A).
 
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
+## Main Functions
+The first user-facing function is fars_summarize_years, which takes a vector of years and returns a tibblefor each year. Each tibble contains the total munber of accidents in each month.
 
-## Styles
-
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
-
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
-
+The other function available to the user is fars_map_state.  This takes a state code and a single year and returns a map of the state with all the accidents from that year plotted on the map.  A key for state codes is available [url](url).
 ## Figures
 
 The figure sizes have been customised so that you can easily put two images side-by-side. 
