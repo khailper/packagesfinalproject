@@ -5,6 +5,6 @@ export(fars_summarize_years)
 
 import(dplyr)
 importFrom("readr", "read_csv")
-importFrom("tidyr", "spread")
+importFrom("tidyr", "spread_")
 importFrom("maps", "map")
 importFrom("graphics", "points")
