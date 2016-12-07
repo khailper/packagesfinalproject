@@ -3,3 +3,12 @@
 language: R
 sudo: false
 cache: packages
+
+addons:
+   apt:
+     packages:
+        - dplyr-dev
+        - tidyr-dev
+        - maps-dev
+        - readr-dev
+        - graphics-dev
