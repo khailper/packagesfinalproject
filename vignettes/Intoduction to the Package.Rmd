@@ -13,7 +13,9 @@ This is an overview of the main functions in the packages. There are also severa
 
 ## Package Purpose
 
-The package is designed to provide to tools to analysis and visualize data regarding auto accidents in the United States based on year.  It assumes the data is stored in .csv.bz2 files in your working directory.  THe data can be downloaded from [here](https://d18ky98rnyall9.cloudfront.net/_e1adac2a5f05192dc8780f3944feec13_fars_data.zip?Expires=1481068800&Signature=ZqNhKJz1-u0PZ7-AQsd0QB-ZClMMfDEIheh8J7nMB-zjJ5Jrzpt91cVWBFFv~~Rg2QF89dU~6KX0j~BEtW6nXT47C7~TlTindl13M00clEO8bVn3t49d974paqq-NORDqVIGFFgHIkz0I1P0ER4LzPV49pj7BSJxCVVP~jybO54_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A).
+The package is designed to provide to tools to analysis and visualize data regarding auto accidents in the United States based on year.  It assumes the data is stored in .csv.bz2 files in the packages exdata folder.  THe data can be downloaded from [here](https://d18ky98rnyall9.cloudfront.net/_e1adac2a5f05192dc8780f3944feec13_fars_data.zip?Expires=1481068800&Signature=ZqNhKJz1-u0PZ7-AQsd0QB-ZClMMfDEIheh8J7nMB-zjJ5Jrzpt91cVWBFFv~~Rg2QF89dU~6KX0j~BEtW6nXT47C7~TlTindl13M00clEO8bVn3t49d974paqq-NORDqVIGFFgHIkz0I1P0ER4LzPV49pj7BSJxCVVP~jybO54_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A).
+
+Data files for 2013, 20414, and 2015 has been included with the package.
 
 ## Main Functions
 The first user-facing function is fars_summarize_years, which takes a vector of years and returns a tibblefor each year. Each tibble contains the total munber of accidents in each month.

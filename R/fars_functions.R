@@ -34,7 +34,8 @@ fars_read <- function(filename) {
 #'make_filename(2014)
 make_filename <- function(year) {
         year <- as.integer(year)
-        sprintf("accident_%d.csv.bz2", year)
+        end_of_filename <- sprintf("accident_%d.csv.bz2", year)
+        system.file("extdata", end_of_filename, package="packagesfinalproject")
 }
 #'
 #'Extract month values for given year(s)
