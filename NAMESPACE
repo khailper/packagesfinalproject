@@ -3,9 +3,11 @@
 export(fars_map_state)
 export(fars_summarize_years)
 
+
+
 import(dplyr)
 import(testthat)
+import(maps)
 importFrom("readr", "read_csv")
 importFrom("tidyr", "spread_")
-importFrom("maps", "map")
 importFrom("graphics", "points")
