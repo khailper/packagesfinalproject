@@ -2,3 +2,9 @@
 
 export(fars_map_state)
 export(fars_summarize_years)
+
+import(dplyr)
+importFrom("readr", "read_csv")
+importFrom("tidyr", "spread")
+importFrom("maps", "map")
+importFrom("graphics", "points")
