@@ -17,6 +17,6 @@ Imports:
         tidyr,
         maps,
         readr,
-        graphics-dev
+        graphics
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1
