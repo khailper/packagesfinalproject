@@ -18,9 +18,4 @@ accident dataset for that year.  This function relies on the make_filename and f
 the dplyr and readr packages.  The fars_read_years also imports the mutate and slect functions from dplyr.The function checks, for year item in the
 vector of years, that a file with the correct name exists.  If not, it returns a warning.
 }
-\examples{
-fars_read_years(2013)
-fars_read_years(2013:2015)
-fars_read_years(c("2013","2014"))
-}
 

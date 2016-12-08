@@ -17,7 +17,4 @@ The function checks if the file exists and returns a warning if it doens't. If t
 relies on the read_csv and tbl_df functions from the readr and dplyr packages, respectively. The function assumes that the data is formatted as a csv. If
 it isn't, the function may return an error
 }
-\examples{
-
-}
 

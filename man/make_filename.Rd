@@ -17,8 +17,4 @@ This function takes a year (in the form of a string or number) and returns a fil
 Note that the function does not return the file, just a string that can be passed to a write function. While the function retruns errors if the input is
 the wrong type, is doesn't check to see if the input is a four-digit year.  make_filename is not dependant on any functions other than ones in base R.
 }
-\examples{
-make_filename("2015")
-make_filename(2014)
-}
 

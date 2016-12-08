@@ -8,8 +8,6 @@
 #'
 #'@return  The function returns a tibble containing the data in the file.
 #'
-#'@examples
-#'
 fars_read <- function(filename) {
         if(!file.exists(filename))
                 stop("file '", filename, "' does not exist")
@@ -29,9 +27,6 @@ fars_read <- function(filename) {
 #'
 #'@return The function returns a string of a filename for a file contain accident data of the given year.
 #'
-#'@examples
-#'make_filename("2015")
-#'make_filename(2014)
 make_filename <- function(year) {
         year <- as.integer(year)
         end_of_filename <- sprintf("accident_%d.csv.bz2", year)
@@ -49,10 +44,6 @@ make_filename <- function(year) {
 #'
 #'@return The function returns a list of tibbles containing the month values for each year's accident dataset along with that year.
 #'
-#'@examples
-#'fars_read_years(2013)
-#'fars_read_years(2013:2015)
-#'fars_read_years(c("2013","2014"))
 fars_read_years <- function(years) {
         lapply(years, function(year) {
                 file <- make_filename(year)
